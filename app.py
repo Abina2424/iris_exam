@@ -15,7 +15,7 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title("IRIS FLOWER CLASSIFIER")
+st.title("IRIS FLOWER CLASSIFIER 🌸 ")
 st.write("Enter the details to **predict** the species")
 st.write(f"### Model Accuracy:{accuracy:.2%}")
 st.divider()
@@ -71,7 +71,7 @@ if st.button("predict species"):
   st.subheader("Prediction Confidence")
 
   st.write({
-      iris.target_names[i]:f"{probability[i][0]*100:.2f}%"
+      iris.target_names[i]:{probability[i][0]*100:.2f}%"
       for i in range(len(iris.target_names))
   })
 
