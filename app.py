@@ -71,7 +71,7 @@ if st.button("predict species"):
   st.subheader("Prediction Confidence")
 
   st.write({
-      iris.target_names[i]:f"{probability[i][0]*100.2f}%"
+      iris.target_names[i]:f"{probability[i][0]*100:.2f}%"
       for i in range(len(iris.target_names))
   })
 
